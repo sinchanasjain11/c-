@@ -1,13 +1,17 @@
-﻿namespace pnz
+﻿namespace squarenum
 {
     internal class Program
     {
-        static void Main(string[] args)
+         public static void Main(string[] args)
         {
-            Console.WriteLine("enter a number:");
+            squarenum calc = new squarenum(); // Create object of Calculator class
+
+            Console.Write("Enter a number: ");
             int num = Convert.ToInt32(Console.ReadLine());
-            pnz n=new pnz(num);
-            n.check();
+
+            int result = calc.Square(num); // Call the Square method
+
+            Console.WriteLine("Square of {0} is {1}", num, result);
         }
     }
 }
