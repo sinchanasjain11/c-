@@ -1,13 +1,13 @@
-﻿namespace Reversenum
+﻿namespace Sum
 {
     internal class Program
     {
-       public  static void Main(string[] args)
+         public static void Main(string[] args)
         {
-            Reversenum obj = new Reversenum(); 
+            Sum obj = new Sum(); 
 
-            obj.ReadData();    
-            obj.Reverse();      
+            obj.ReadNumber();   
+            obj.CalculateSum(); 
             obj.Display();
         }
     }
