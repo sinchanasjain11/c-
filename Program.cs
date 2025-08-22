@@ -1,14 +1,14 @@
-﻿namespace Sum
+﻿namespace constructor
 {
     internal class Program
     {
          public static void Main(string[] args)
         {
-            Sum obj = new Sum(); 
+            Constructor s = new Constructor("sinchana", 19);
+            s.display();
 
-            obj.ReadNumber();   
-            obj.CalculateSum(); 
-            obj.Display();
+
+           
         }
     }
 }
