@@ -1,14 +1,17 @@
-﻿namespace constructor
+﻿namespace BankAccount
 {
     internal class Program
     {
-         public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Constructor s = new Constructor("sinchana", 19);
-            s.display();
-
-
-           
+            SavingsAcc p1 = new SavingsAcc("Josh", 10023);
+            p1.Deposit(1000);
+            p1.GetBalance();
+            p1.Withdraw(1000);
+            p1.CalcInterest(6, 2);
+            p1.DisplayInterest();
+            p1.AddInterest();
+            p1.GetBalance();
         }
     }
 }
